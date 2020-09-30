@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom|end"
+        android:textColor="@color/colorText"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:rowCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_margin="2dp"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="2"
+            android:background="@color/colorLightDark"
+            android:text="@string/clean"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/divide"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/multiply"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/seven"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/eight"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/nine"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/minus"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/four"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/five"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/six"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/plus"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/one"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/two"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/three"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/equal"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/zero"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/dot"
+            android:layout_margin="2dp"
+            android:background="@color/colorLightDark"
+            android:text="@string/dot"
+            android:textColor="@color/colorText" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
